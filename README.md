@@ -18,8 +18,8 @@ Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7
     
 
 ## Experience:  
-    -Had some issues with syncing node, slow internet delayed some progress. Try and schedule this for the night from next time.   
-    -Having a look a the ENS contract, the unsealBid function sends out the event BidRevelead. But the cancelBid function also sends out the event. Scope of task seems to be to focus on unsealBid's revelation event. Look into it in case any obvious mistake was made, else try and find a workaround/accept as a constraint.   
+    -Had some issues with syncing node, slow internet delayed some progress.<br/>Try and schedule this for the night from next time.   
+    -Having a look a the ENS contract, the unsealBid function sends out the <br/>event BidRevelead. But the cancelBid function also sends out the event. Scope of task seems to be to focus on unsealBid's revelation event. Look into it in case any obvious mistake was made, else try and find a workaround/accept as a constraint.   
     -Had some issues with the code, which seemed to be due to following the wrong version of web3. Make sure you check before deep diving into solving errors.   
     -Needed to find a way to convert utc or dates into block ranges. solution: find latest block time, and subtract 86400/average_block_time  
     -Settled for a local copy of web3.min.js, usually npm would handle the web3 installation and locate it in the node_modules, but mac osx was giving some errors with the compiler and refusing to install it. Had to use a global pre-compiled version of web3v1.0.0.   
