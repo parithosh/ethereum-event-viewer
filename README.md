@@ -34,7 +34,7 @@ Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7
     -Include tests for the system, include tests before webApp runs   
     -Look at other GUI options, maybe a more visual display of addresses or events  
     -Make the script push events at intervals, as new events occur on the chain push it onto the webApp  
-    -Enable selection of date range for events     
+    -Enable selection of date range for events,and the events       
     
 
 ## Contact info:  
