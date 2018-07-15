@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/parithosh/ethereum-event-viewer/issues"
   },
-  "homepage": "https://github.com/parithosh/ethereum-event-viewer#readme"
+  "homepage": "https://github.com/parithosh/ethereum-event-viewer#readme",
+  "dependencies": {
+    "node-gyp": "^3.7.0"
+  }
 }
