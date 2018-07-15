@@ -14,7 +14,7 @@ Task definition:
 Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef
 
 Instructions:
-
+    
 
 Experience:
     -Had some issues with syncing node, slow internet delayed some progress. Try and schedule this for the night from next time. 
