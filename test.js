@@ -29,7 +29,11 @@ async function asyncCall() {
     filter: {fromBlock: result, toBlock: 'latest'}, // Using an array means OR: e.g. 20 or 23
     fromBlock: result
   }, function(error, event){ 
-          console.log(event);
+    if (error) {
+      return console.log(error);
+    }
+
+    buildCollapsible(event);
           
   })
 }
@@ -49,8 +53,48 @@ function resolveAfter2Seconds() {
   });
 }
 
+/**
+ * Function to build DOM element of a collapsible given an input array
+ */
+function buildCollapsible(arr) {
+  // Clear the loading element
+  $("#bidEvents").html("");
 
-document.getElementById("container1").innerHTML = 5 + 6;
+  // Iterate through the array of events to display
+  arr.reverse().forEach(ele => {
+
+    // Build TableEle
+    var tableEle = "\
+      <table>\
+        <thead>\
+          <tr>\
+              <th>Property</th><th>Value</th>\
+          </tr>\
+        </thead>\
+      <tbody>"
+
+    Object.keys(ele).forEach(key => {
+      // Objects dont render correctly hece filter them out and handle separately
+      if (typeof ele[key] != "object" ) {
+        tableEle += "<tr><td>" + key + "</td><td>" + ele[key] + "</td></tr>"
+      }
+    });
+
+    tableEle += "</tbody></table>";
+
+    // Build Collapsible DOM Element
+    var collapseEle = '\
+      <li>\
+        <div class="collapsible-header"><i class="material-icons">monetization_on</i>' + 'Block Number:' + ele.blockNumber + '</div>\
+        <div class="collapsible-body">' + tableEle + '</div>\
+      </li>'
+
+      $("#bidEvents").append($(collapseEle));
+  });
+
+  // Initialize the collapsible
+  $('.collapsible').collapsible();
+}
 
 
 

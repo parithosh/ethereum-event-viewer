@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>ENS events</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
     <script src="./web3.min.js"></script>
 
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="center brand-logo">ENS bid revelation events</a>
+        </div>
+    </nav>
+
     <div class="container">
 
-        <h1><center>Slock.it programming challenge</center></h1>
-        <h2><center>ENS bid revelation events: </center></h2>
-        
-        <div id="container1"></div>
+          <h1> </h1>
+          <h7>Click on desired block number to get information on the event</h1>
+        <ul class="collapsible" id="bidEvents">
+            <li><div class="collapsible-header"><i class="material-icons">timer</i>Loading</div></li>
+        </ul>
 
-        <center><button id="button" onClick="window.location.reload()"> Reload </button></center>
+        <center>
+            <button class="waves-effect waves-light btn" id="button" onClick="window.location.reload()"> Reload </button>
+        </center>
 
     </div>
 
+    <!-- Compiled and minified JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="./test.js"></script>
 
 
 </body>
+
 </html>
