@@ -1,7 +1,7 @@
 ENS event visualizer:
 ===================================
 
-Please write a test application to investigate or list or visualize the ENS contract events of
+ write a test application to investigate or list or visualize the ENS contract events of
  the past (e.g. the last 1 or 2 days). focussing in particular on the bid revelation event:  
 	<space>	 unsealBid(bytes32 _hash, uint256 _value, bytes32 _salt)  
 
@@ -27,7 +27,8 @@ Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7
     -Needed to find a way to convert utc or dates into block ranges. solution: find latest block time, and subtract 86400/average_block_time   
     -Settled for a local copy of web3.min.js, usually npm would handle the web3 installation and locate it in the node_modules, but mac osx was giving some errors with the compiler and refusing to install it. Had to use a global pre-compiled version of web3v1.0.0    
     -Instead of the local copy of web3.min.js, I tried using a CDN source as well, but most cdn sources i could find seemed to be of v0.2 and I have used v1.0.0-beta.34. Functions i have used broke under the earlier build due to changes. decided against this method    
-    -Using materialize from older project to get the view on webapp     
+    -Using materialize from older project to get the view on webapp   
+    -Using etherscan, verified the result, looks to be in order    
 
 ## Future work:
     -Could use a local node, can be achieved by changing the web3 provider. Need to add a check for if the node is synced before proceeding  
