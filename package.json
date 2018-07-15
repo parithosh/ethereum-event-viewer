@@ -1,0 +1,19 @@
+{
+  "name": "slock.it",
+  "version": "1.0.0",
+  "description": "used to visualize events",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parithosh/ethereum-event-viewer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parithosh/ethereum-event-viewer/issues"
+  },
+  "homepage": "https://github.com/parithosh/ethereum-event-viewer#readme"
+}
