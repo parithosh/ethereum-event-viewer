@@ -29,6 +29,7 @@ Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7
     -Instead of the local copy of web3.min.js, I tried using a CDN source as well, but most cdn sources i could find seemed to be of v0.2 and I have used v1.0.0-beta.34. Functions i have used broke under the earlier build due to changes. decided against this method    
     -Using materialize from older project to get the view on webapp   
     -Using etherscan, verified the result, looks to be in order    
+    -Using infura as the web3 provider instead of local, this solution has its limitations with scale and requests, but for this application it should be enough. It adds the advantage that we don't need to worry about node syncing. 
 
 ## Future work:
     -Could use a local node, can be achieved by changing the web3 provider. Need to add a check for if the node is synced before proceeding  
