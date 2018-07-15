@@ -1,4 +1,4 @@
-Coding test Slock.it:
+ENS event visualizer:
 ===================================
 
 Please write a test application to investigate or list or visualize the ENS contract events of
