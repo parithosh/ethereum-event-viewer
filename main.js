@@ -93,7 +93,7 @@ function buildCollapsible(arr) {
     //in order to change the heading, change the collapsible header class
     var collapseEle = '\
       <li>\
-        <div class="collapsible-header"><i class="material-icons">monetization_on</i>' + 'Block Number:' + ele.blockNumber + '</div>\
+        <div class="collapsible-header"><i class="material-icons">monetization_on</i>' + 'Block Number: ' + ele.blockNumber + '</div>\
         <div class="collapsible-body">' + tableEle + '</div>\
       </li>'
 
