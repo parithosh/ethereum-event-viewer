@@ -36,3 +36,6 @@ Note: The ethereum address of the ENS-Registrar Contract is: 0x6090A6e47849629b7
     -Make the script push events at intervals, as new events occur on the chain push it onto the webApp  
     -Enable selection of date range for events     
     
+
+## Contact info:  
+Feel free to contact me to discuss any issues, questions, or comments. My contact info can be found on my GitHub page.
